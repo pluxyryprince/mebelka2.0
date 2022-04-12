@@ -5,7 +5,7 @@ namespace mebelka2._0
     class connector
     {
 
-        MySqlConnection connection = new MySqlConnection("server=127.0.0.1;userid=root;password=root;database=furniture_store;port=3306");
+        MySqlConnection connection = new MySqlConnection("server=127.0.0.1;userid=root;password=;database=furniture_store;port=3306");
 
         public void OpenConnection()
         {

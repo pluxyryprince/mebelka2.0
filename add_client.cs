@@ -18,7 +18,7 @@ namespace mebelka2._0
             InitializeComponent();
         }
 
-        private string connect = "server=127.0.0.1;userid=root;password=root;database=furniture_store;port=3306";
+        private string connect = "server=127.0.0.1;userid=root;password=;database=furniture_store;port=3306";
         private void add_client_Load(object sender, EventArgs e)
         {
            
