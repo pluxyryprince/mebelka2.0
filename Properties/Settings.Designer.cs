@@ -33,5 +33,15 @@ namespace mebelka2._0.Properties {
                 return ((string)(this["furniture_storeConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=127.0.0.1;user id=root;database=furniture_store;persistsecurityinfo=True")]
+        public string furniture_storeConnectionString1 {
+            get {
+                return ((string)(this["furniture_storeConnectionString1"]));
+            }
+        }
     }
 }

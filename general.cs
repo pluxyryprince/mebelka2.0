@@ -19,16 +19,22 @@ namespace mebelka2._0
         }
         private void general_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "furniture_storeDataSet1.furnture_model". При необходимости она может быть перемещена или удалена.
+            this.furnture_modelTableAdapter1.Fill(this.furniture_storeDataSet1.furnture_model);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "furniture_storeDataSet1.client". При необходимости она может быть перемещена или удалена.
+            this.clientTableAdapter1.Fill(this.furniture_storeDataSet1.client);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "furniture_storeDataSet1.sell_contract". При необходимости она может быть перемещена или удалена.
+            this.sell_contractTableAdapter1.Fill(this.furniture_storeDataSet1.sell_contract);
             this.FormClosing += MainForm_Closing;
 
             try
             {
                 // TODO: данная строка кода позволяет загрузить данные в таблицу "furniture_storeDataSet.client". При необходимости она может быть перемещена или удалена.
-                this.clientTableAdapter.Fill(this.furniture_storeDataSet.client);
+                this.clientTableAdapter1.Fill(this.furniture_storeDataSet1.client);
                 // TODO: данная строка кода позволяет загрузить данные в таблицу "furniture_storeDataSet.furnture_model". При необходимости она может быть перемещена или удалена.
-                this.furnture_modelTableAdapter.Fill(this.furniture_storeDataSet.furnture_model);
+                this.furnture_modelTableAdapter1.Fill(this.furniture_storeDataSet1.furnture_model);
                 // TODO: данная строка кода позволяет загрузить данные в таблицу "furniture_storeDataSet.sell_contract". При необходимости она может быть перемещена или удалена.
-                this.sell_contractTableAdapter.Fill(this.furniture_storeDataSet.sell_contract);
+                this.sell_contractTableAdapter1.Fill(this.furniture_storeDataSet1.sell_contract);
             }
             catch (Exception) {
                 MessageBox.Show("Ошибка подключения к базе данных");
@@ -52,7 +58,7 @@ namespace mebelka2._0
         {
             try
             {
-                this.clientTableAdapter.Update(this.furniture_storeDataSet.client);
+                this.clientTableAdapter1.Update(this.furniture_storeDataSet1.client);
             }
             catch (Exception ex)
             {
@@ -94,7 +100,7 @@ namespace mebelka2._0
 
         private void save_furniture_Click(object sender, EventArgs e)//сохранить изменения в таблице мебель
         {
-            this.furnture_modelTableAdapter.Update(this.furniture_storeDataSet.furnture_model);
+            this.furnture_modelTableAdapter1.Update(this.furniture_storeDataSet1.furnture_model);
         }
 
         private void delete_furniture_Click(object sender, EventArgs e)//удалить строку из таблицы мебель
@@ -107,7 +113,7 @@ namespace mebelka2._0
         {
             try
             {
-                this.sell_contractTableAdapter.Update(this.furniture_storeDataSet.sell_contract);
+                this.sell_contractTableAdapter1.Update(this.furniture_storeDataSet1.sell_contract);
             }
             catch(Exception ex)
             {
