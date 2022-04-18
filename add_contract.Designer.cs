@@ -30,6 +30,7 @@ namespace mebelka2._0
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_contract));
             this.label5 = new System.Windows.Forms.Label();
             this.add_contract_button = new System.Windows.Forms.Button();
             this.enter_id_client = new System.Windows.Forms.ComboBox();
@@ -309,6 +310,7 @@ namespace mebelka2._0
             this.Controls.Add(this.enter_id_client);
             this.Controls.Add(this.add_contract_button);
             this.Controls.Add(this.label5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "add_contract";
             this.Text = "Мебельная фабрика \"BTS\"";
             this.Load += new System.EventHandler(this.add_contract_Load);

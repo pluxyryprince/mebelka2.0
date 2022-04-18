@@ -29,6 +29,7 @@ namespace mebelka2._0
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_client));
             this.name_client = new System.Windows.Forms.TextBox();
             this.adress = new System.Windows.Forms.TextBox();
             this.telephone = new System.Windows.Forms.TextBox();
@@ -131,6 +132,7 @@ namespace mebelka2._0
             this.Controls.Add(this.telephone);
             this.Controls.Add(this.adress);
             this.Controls.Add(this.name_client);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "add_client";
             this.Text = "Мебельная фабрика \"BTS\"";
             this.Load += new System.EventHandler(this.add_client_Load);

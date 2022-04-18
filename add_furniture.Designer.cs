@@ -29,6 +29,7 @@ namespace mebelka2._0
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_furniture));
             this.item = new System.Windows.Forms.TextBox();
             this.model_furniture = new System.Windows.Forms.TextBox();
             this.name_furniture = new System.Windows.Forms.TextBox();
@@ -154,6 +155,7 @@ namespace mebelka2._0
             this.Controls.Add(this.item);
             this.Controls.Add(this.model_furniture);
             this.Controls.Add(this.name_furniture);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "add_furniture";
             this.Text = "Мебельная фабрика \"BTS\"";
             this.Load += new System.EventHandler(this.add_furniture_Load);

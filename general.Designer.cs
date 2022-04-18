@@ -30,6 +30,7 @@ namespace mebelka2._0
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(general));
             this.sell_contract = new System.Windows.Forms.TabPage();
             this.delete_contract = new System.Windows.Forms.Button();
             this.save_sell = new System.Windows.Forms.Button();
@@ -44,6 +45,8 @@ namespace mebelka2._0
             this.registrationdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.achievementdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sellcontractBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.furniture_storeDataSet1 = new mebelka2._0.furniture_storeDataSet1();
             this.sellcontractBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.furniture_storeDataSet = new mebelka2._0.furniture_storeDataSet1();
             this.furniture = new System.Windows.Forms.TabPage();
@@ -56,6 +59,7 @@ namespace mebelka2._0
             this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.furnturemodelBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.furnturemodelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clients = new System.Windows.Forms.TabPage();
             this.delete_client = new System.Windows.Forms.Button();
@@ -66,6 +70,7 @@ namespace mebelka2._0
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.sell_contractTableAdapter = new mebelka2._0.furniture_storeDataSet1TableAdapters.sell_contractTableAdapter();
@@ -74,31 +79,27 @@ namespace mebelka2._0
             this.clientBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.furnturemodelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sellcontractBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.furniture_storeDataSet1 = new mebelka2._0.furniture_storeDataSet1();
-            this.sellcontractBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.sell_contractTableAdapter1 = new mebelka2._0.furniture_storeDataSet1TableAdapters.sell_contractTableAdapter();
-            this.clientBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.clientTableAdapter1 = new mebelka2._0.furniture_storeDataSet1TableAdapters.clientTableAdapter();
-            this.furnturemodelBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.furnture_modelTableAdapter1 = new mebelka2._0.furniture_storeDataSet1TableAdapters.furnture_modelTableAdapter();
             this.sell_contract.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_contracts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sellcontractBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furniture_storeDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sellcontractBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.furniture_storeDataSet)).BeginInit();
             this.furniture.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_furniture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnturemodelBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnturemodelBindingSource)).BeginInit();
             this.clients.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_clients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnturemodelBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sellcontractBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.furniture_storeDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sellcontractBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.furnturemodelBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // sell_contract
@@ -223,6 +224,16 @@ namespace mebelka2._0
             this.sumDataGridViewTextBoxColumn.HeaderText = "Сумма";
             this.sumDataGridViewTextBoxColumn.Name = "sumDataGridViewTextBoxColumn";
             // 
+            // sellcontractBindingSource2
+            // 
+            this.sellcontractBindingSource2.DataMember = "sell_contract";
+            this.sellcontractBindingSource2.DataSource = this.furniture_storeDataSet1;
+            // 
+            // furniture_storeDataSet1
+            // 
+            this.furniture_storeDataSet1.DataSetName = "furniture_storeDataSet1";
+            this.furniture_storeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // sellcontractBindingSource
             // 
             this.sellcontractBindingSource.DataMember = "sell_contract";
@@ -331,6 +342,11 @@ namespace mebelka2._0
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.Width = 247;
             // 
+            // furnturemodelBindingSource2
+            // 
+            this.furnturemodelBindingSource2.DataMember = "furnture_model";
+            this.furnturemodelBindingSource2.DataSource = this.furniture_storeDataSet1;
+            // 
             // furnturemodelBindingSource
             // 
             this.furnturemodelBindingSource.DataMember = "furnture_model";
@@ -424,6 +440,11 @@ namespace mebelka2._0
             this.telephoneDataGridViewTextBoxColumn.HeaderText = "Телефон";
             this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
             // 
+            // clientBindingSource2
+            // 
+            this.clientBindingSource2.DataMember = "client";
+            this.clientBindingSource2.DataSource = this.furniture_storeDataSet1;
+            // 
             // clientBindingSource
             // 
             this.clientBindingSource.DataMember = "client";
@@ -467,33 +488,13 @@ namespace mebelka2._0
             this.sellcontractBindingSource1.DataMember = "sell_contract";
             this.sellcontractBindingSource1.DataSource = this.furniture_storeDataSet;
             // 
-            // furniture_storeDataSet1
-            // 
-            this.furniture_storeDataSet1.DataSetName = "furniture_storeDataSet1";
-            this.furniture_storeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sellcontractBindingSource2
-            // 
-            this.sellcontractBindingSource2.DataMember = "sell_contract";
-            this.sellcontractBindingSource2.DataSource = this.furniture_storeDataSet1;
-            // 
             // sell_contractTableAdapter1
             // 
             this.sell_contractTableAdapter1.ClearBeforeFill = true;
             // 
-            // clientBindingSource2
-            // 
-            this.clientBindingSource2.DataMember = "client";
-            this.clientBindingSource2.DataSource = this.furniture_storeDataSet1;
-            // 
             // clientTableAdapter1
             // 
             this.clientTableAdapter1.ClearBeforeFill = true;
-            // 
-            // furnturemodelBindingSource2
-            // 
-            this.furnturemodelBindingSource2.DataMember = "furnture_model";
-            this.furnturemodelBindingSource2.DataSource = this.furniture_storeDataSet1;
             // 
             // furnture_modelTableAdapter1
             // 
@@ -506,27 +507,28 @@ namespace mebelka2._0
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1323, 660);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "general";
             this.Text = "Мебельная фабрика \"BTS\"";
             this.Load += new System.EventHandler(this.general_Load);
             this.sell_contract.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_contracts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sellcontractBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furniture_storeDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sellcontractBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.furniture_storeDataSet)).EndInit();
             this.furniture.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_furniture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furnturemodelBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnturemodelBindingSource)).EndInit();
             this.clients.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_clients)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
             this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.furnturemodelBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sellcontractBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.furniture_storeDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sellcontractBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.furnturemodelBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
